@@ -1,0 +1,77 @@
+.about{
+    padding: 10rem 0;
+    /* margin-right: 10rem; */
+}
+.about__header{
+    width: 90%;
+    margin: auto;
+}
+.about__container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.abouts{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 4%;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+/* commented the code below becuase the final output is weird */
+/* .about__parent{
+    filter: drop-shadow(0 0 10px);
+    height: 100%;
+}
+.about-box{
+    padding: 2rem;
+    background-color: white; 
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+} */
+.about__parent{
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.about__parent:hover{
+    transform: scale(1.04);
+}
+.abouts:hover .about__parent:not(:hover){
+    opacity: .8;
+    transform: scale(0.98);
+}
+.about-box{
+    padding: 2rem;
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+    background-color: #ccc;
+    height: 100%;
+}
+
+/* policy */
+.operation-policy{
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+.policy-title{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    letter-spacing: 2.2px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+.policy__img-box{
+    position: relative;
+    /* filter: blur(1px); */
+    padding: 2rem;
+    height: 20rem;
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/businessman-analyzing-investment-charts-accounting-600w-334223177.jpg);
+    background-position: center;
+    background-size: cover;
+}

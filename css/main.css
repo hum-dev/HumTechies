@@ -1,0 +1,33 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+:root{
+    --color-grey-default:#333;
+    --color-white:#fff;
+    --color-white-light: #ccc;
+    --color-primary: blue;
+    --color-primary-light: rgba(0, 0, 255, 0.795);
+    --color-primary-lighter: rgba(0, 0, 255, 0.486);
+    --color-error: red;
+    --color-correct: green;
+    --color-black:#000;
+    --color-tertiary:tomato;
+}
+body{
+    color: var(--color-grey-default);
+    line-height: 1.7;
+    letter-spacing: 1px;
+    /* padding: .5rem; */
+    line-height: 1.6;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+main{
+    padding: 0.5rem;
+}

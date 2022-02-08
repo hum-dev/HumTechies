@@ -1,0 +1,44 @@
+.home{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.home__text{
+    position: relative;
+    background-color: var(--color-tertiary);
+}
+.home__text--textbox{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+.home__text--textbox >*:not(:last-child){
+    margin-bottom: 2rem;
+}
+.home__text--sub{
+    font-size: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.home__text--main{
+    font-size: 5rem;
+    display: block;
+    text-transform: capitalize;
+    color: var(--color-black);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.home__text--explanatory{
+    display: block;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.home__picture{
+    background-image: url(../img/computer-desk-electronics-indoors-374074.jpg);
+    background-position: center;
+    background-size: cover;
+}
